@@ -12,14 +12,14 @@ import android.widget.TextView
 import org.w3c.dom.Text
 
 var open_coffer = 0
-lateinit var bgm_arcade : MediaPlayer
+lateinit var bgm_arcade: MediaPlayer
 
 class arcade : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_arcade)
 
-        val exit_button : Button = findViewById(R.id.exit_button)
+        val exit_button: Button = findViewById(R.id.exit_button)
         exit_button.setOnClickListener {
             bgm_arcade.stop()
             val intent = Intent(this@arcade, livingroom::class.java)
@@ -27,18 +27,18 @@ class arcade : AppCompatActivity() {
             startActivity(intent)
             overridePendingTransition(0, 0)
         }
-        val script : TextView = findViewById(R.id.script)
-        val dg_image : ImageView = findViewById(R.id.dg_image)
-        val next_button : Button = findViewById(R.id.next_button)
-        val statue : ImageView = findViewById(R.id.statue)
-        val statue2 : ImageView = findViewById(R.id.statue2)
-        val statue3 : ImageView = findViewById(R.id.statue3)
-        val statue4 : ImageView = findViewById(R.id.statue4)
+        val script: TextView = findViewById(R.id.script)
+        val dg_image: ImageView = findViewById(R.id.dg_image)
+        val next_button: Button = findViewById(R.id.next_button)
+        val statue: ImageView = findViewById(R.id.statue)
+        val statue2: ImageView = findViewById(R.id.statue2)
+        val statue3: ImageView = findViewById(R.id.statue3)
+        val statue4: ImageView = findViewById(R.id.statue4)
 
-        val password : EditText = findViewById(R.id.password)
-        val text_password : TextView = findViewById(R.id.text_password)
-        val answer_button : Button = findViewById(R.id.answer)
-        val cup : ImageView = findViewById(R.id.cup)
+        val password: EditText = findViewById(R.id.password)
+        val text_password: TextView = findViewById(R.id.text_password)
+        val answer_button: Button = findViewById(R.id.answer)
+        val cup: ImageView = findViewById(R.id.cup)
 
         var count = 0
         next_button.setOnClickListener {
@@ -79,7 +79,7 @@ class arcade : AppCompatActivity() {
                 script.text = "..."
                 next_button.visibility = View.INVISIBLE
                 answer_button.setOnClickListener {
-                    if(password.text.toString() == "2451"){
+                    if (password.text.toString() == "2451") {
                         password.visibility = View.INVISIBLE
                         answer_button.visibility = View.INVISIBLE
                         text_password.visibility = View.INVISIBLE
@@ -90,17 +90,17 @@ class arcade : AppCompatActivity() {
                     }
                 }
             }
-            if (count == 10){
+            if (count == 10) {
                 script.text = "아닛??"
             }
-            if (count == 11){
+            if (count == 11) {
                 script.text = "여기에 비밀번호를 칠 수가 있었네?"
             }
-            if (count == 12){
+            if (count == 12) {
                 dg_image.setImageResource(R.drawable.ndgnotforgive)
                 script.text = "근데 방금 무슨 큰 소리가 들렸는데!?"
             }
-            if (count == 13){
+            if (count == 13) {
                 script.text = "무슨 소리였을까.."
                 cup.visibility = View.INVISIBLE
                 next_button.visibility = View.INVISIBLE

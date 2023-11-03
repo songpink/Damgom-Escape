@@ -22,26 +22,26 @@ class livingroom : AppCompatActivity() {
         setContentView(R.layout.activity_livingroom)
 
         var catcount = 0
-        val nonamedcat : ImageView = findViewById(R.id.nonamedcat)
+        val nonamedcat: ImageView = findViewById(R.id.nonamedcat)
 
-        val next_button : Button = findViewById(R.id.next_button)
-        val dg_image : ImageView = findViewById(R.id.dg_image)
-        val text_box : TextView = findViewById(R.id.textbox)
-        val script : TextView = findViewById(R.id.script)
+        val next_button: Button = findViewById(R.id.next_button)
+        val dg_image: ImageView = findViewById(R.id.dg_image)
+        val text_box: TextView = findViewById(R.id.textbox)
+        val script: TextView = findViewById(R.id.script)
 
-        val bed_room : ImageButton = findViewById(R.id.bedRoom)
-        val recording_room : ImageButton = findViewById(R.id.recordingRoom)
-        val arcade_room : ImageButton = findViewById(R.id.arcade)
-        val movie_room : ImageButton = findViewById(R.id.movieRoom)
-        val scriptbutton : Button = findViewById(R.id.script_button)
-        val script_dg : TextView = findViewById(R.id.script_dg)
-        val script_cat : TextView = findViewById(R.id.script_cat)
+        val bed_room: ImageButton = findViewById(R.id.bedRoom)
+        val recording_room: ImageButton = findViewById(R.id.recordingRoom)
+        val arcade_room: ImageButton = findViewById(R.id.arcade)
+        val movie_room: ImageButton = findViewById(R.id.movieRoom)
+        val scriptbutton: Button = findViewById(R.id.script_button)
+        val script_dg: TextView = findViewById(R.id.script_dg)
+        val script_cat: TextView = findViewById(R.id.script_cat)
 
-        val answer : EditText = findViewById(R.id.answer)
+        val answer: EditText = findViewById(R.id.answer)
 
-        val submit : Button = findViewById(R.id.submit)
+        val submit: Button = findViewById(R.id.submit)
 
-        val new_button : Button = findViewById(R.id.new_button)
+        val new_button: Button = findViewById(R.id.new_button)
 
         fun nonamedcat() {  // 이름없는고양이 등장
             myflag = 1 // myflag가 1인 동안에는 catcount가 증가하지 않게 하기
@@ -56,34 +56,26 @@ class livingroom : AppCompatActivity() {
 
             var count2 = 0
             scriptbutton.setOnClickListener {
-                if (count2 == 0){
+                if (count2 == 0) {
                     script_dg.visibility = View.VISIBLE
-                }
-                else if (count2 == 1){
+                } else if (count2 == 1) {
                     script_dg.text = "게다가 말을 한다??"
-                }
-                else if (count2 == 2){
+                } else if (count2 == 2) {
                     script_cat.text = "너도 곰인데 말 하고 있잖냥?"
-                }
-                else if (count2 == 3){
+                } else if (count2 == 3) {
                     dg_image.setImageResource(R.drawable.ndgstanding)
                     script_dg.text = "음.. 뭐 그렇긴 하넹.."
-                }
-                else if (count2 == 4){
+                } else if (count2 == 4) {
                     script_cat.text = "보아하니 핑크빈이 또 장난을 치고있는 모양이다냥."
-                }
-                else if (count2 == 5){
+                } else if (count2 == 5) {
                     script_cat.text = "내가 내는 문제를 풀면 도와주겠다."
-                }
-                else if (count2 == 6){
+                } else if (count2 == 6) {
                     script_cat.text = "지금까지 잘 조사했다면 풀 수 있는 문제다냥."
-                }
-                else if (count2 == 7){
+                } else if (count2 == 7) {
                     script_dg.bringToFront()
                     script_dg.text = "음.. 그냥 도와주면 안돼요?"
                     dg_image.setImageResource(R.drawable.ndgbboo)
-                }
-                else if (count2 == 8){
+                } else if (count2 == 8) {
                     script_dg.visibility = View.INVISIBLE
                     script_cat.text = "핑크빈이 맨 처음에 두 명 있었다면 1024명이 되는 데 몇 년이 걸릴까냥? (무시)"
                     answer.visibility = View.VISIBLE
@@ -122,7 +114,8 @@ class livingroom : AppCompatActivity() {
                                                     answer.visibility = View.INVISIBLE
                                                     scriptbutton.visibility = View.VISIBLE
                                                     scriptbutton.setOnClickListener {
-                                                        script_cat.text = "그럼 약속대로 도와주겠다냥. 누군가를 불러올테니 좀만 기다려라."
+                                                        script_cat.text =
+                                                            "그럼 약속대로 도와주겠다냥. 누군가를 불러올테니 좀만 기다려라."
                                                         nonamedcat.visibility = View.INVISIBLE
                                                         new_button.visibility = View.VISIBLE
                                                         scriptbutton.visibility = View.INVISIBLE
@@ -131,13 +124,11 @@ class livingroom : AppCompatActivity() {
                                                     script_cat.text = "틀렸다냥. 이것만 맞히면 된다냥."
                                             }
                                         }
-                                    }
-                                    else
+                                    } else
                                         script_cat.text = "좀 어렵냥? 틀렸다냥."
                                 }
                             }
-                        }
-                        else
+                        } else
                             script_cat.text = "틀렸다냥. 다시 생각해 보라냥."
                     }
                 }
@@ -145,16 +136,16 @@ class livingroom : AppCompatActivity() {
             }
         }
 
-        val minibean : ImageView = findViewById(R.id.minibean)
-        val script_mb : TextView = findViewById(R.id.script_mb)
-        val next_button_mb : Button = findViewById(R.id.next_button_mb)
-        val choose1 : Button = findViewById(R.id.choose1)
-        val choose2 : Button = findViewById(R.id.choose2)
-        val choose3 : Button = findViewById(R.id.choose3)
-        val choose4 : Button = findViewById(R.id.choose4)
-        val mb_button_2 : Button = findViewById(R.id.mb_button_2)
-        val mb_button_3 : Button = findViewById(R.id.mb_button_3)
-        fun minibean(){
+        val minibean: ImageView = findViewById(R.id.minibean)
+        val script_mb: TextView = findViewById(R.id.script_mb)
+        val next_button_mb: Button = findViewById(R.id.next_button_mb)
+        val choose1: Button = findViewById(R.id.choose1)
+        val choose2: Button = findViewById(R.id.choose2)
+        val choose3: Button = findViewById(R.id.choose3)
+        val choose4: Button = findViewById(R.id.choose4)
+        val mb_button_2: Button = findViewById(R.id.mb_button_2)
+        val mb_button_3: Button = findViewById(R.id.mb_button_3)
+        fun minibean() {
             myflag = 1
             dg_image.setImageResource(R.drawable.what)
             minibean.visibility = View.VISIBLE
@@ -512,7 +503,7 @@ class livingroom : AppCompatActivity() {
                             }
                         }
                     }
-                    if (count_3 == 7){
+                    if (count_3 == 7) {
                         val intent = Intent(this@livingroom, pbtemp::class.java)
                         startActivity(intent)
                     }
@@ -524,16 +515,14 @@ class livingroom : AppCompatActivity() {
 
         var new_count = 0
         new_button.setOnClickListener {
-            if (new_count == 0){
+            if (new_count == 0) {
                 script_dg.visibility = View.VISIBLE
                 script_dg.text = "?"
                 script_cat.visibility = View.GONE
-            }
-            else if(new_count == 1){
+            } else if (new_count == 1) {
                 dg_image.setImageResource(R.drawable.ndgstanding)
                 script_dg.text = "머징..?"
-            }
-            else if(new_count == 2){
+            } else if (new_count == 2) {
                 script_dg.text = "하던거나 계속 해야겠다.."
                 new_button.visibility = View.INVISIBLE
                 next_button.visibility = View.INVISIBLE
@@ -547,31 +536,21 @@ class livingroom : AppCompatActivity() {
             if (count == 0) {
                 text_box.setText("핑크빈의 집은 방이 4개나 있는 것 같아요!")
                 dg_image.setImageResource(R.drawable.ndgnothinking)
-            }
-
-            else if (count == 1) {
+            } else if (count == 1) {
                 dg_image.setImageResource(R.drawable.ndglying)
                 script.visibility = View.VISIBLE
-            }
-
-            else if (count == 2) {
+            } else if (count == 2) {
                 script.setText("귀찮은데.. 그냥 여기서 살까?")
-            }
-
-            else if (count == 3) {
+            } else if (count == 3) {
                 text_box.setText("안됩니다! 당신이 담곰이를 도와줘야겠어요")
-            }
-
-            else if (count == 4) {
+            } else if (count == 4) {
                 script.visibility = View.GONE
                 text_box.setText("위에서 방을 골라 들어갈 수 있습니다!")
                 bed_room.visibility = View.VISIBLE
                 recording_room.visibility = View.VISIBLE
                 movie_room.visibility = View.VISIBLE
                 arcade_room.visibility = View.VISIBLE
-            }
-
-            else if (count == 5) {
+            } else if (count == 5) {
                 text_box.setText("최대한 단서를 모아 핑크빈의 집에서 탈출해 주세요~~")
                 next_button.visibility = View.GONE
             }
@@ -594,14 +573,14 @@ class livingroom : AppCompatActivity() {
                 nonamedcat()
                 catcount++
             }
-            if (catcount == 9){
+            if (catcount == 9) {
                 minibean()
                 catcount++
             }
         }
 
 
-        recording_room.setOnClickListener{
+        recording_room.setOnClickListener {
             val intent = Intent(this@livingroom, recordingroom::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
             startActivity(intent)
@@ -609,17 +588,17 @@ class livingroom : AppCompatActivity() {
             if (myflag == 0) {
                 catcount++
             }
-            if (catcount==5){
+            if (catcount == 5) {
                 nonamedcat()
                 catcount++
             }
-            if (catcount == 9){
+            if (catcount == 9) {
                 minibean()
                 catcount++
             }
         }
 
-        arcade_room.setOnClickListener{
+        arcade_room.setOnClickListener {
             val intent = Intent(this@livingroom, arcade::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
             startActivity(intent)
@@ -630,17 +609,17 @@ class livingroom : AppCompatActivity() {
             if (myflag == 0) {
                 catcount++
             }
-            if (catcount==5){
+            if (catcount == 5) {
                 nonamedcat()
                 catcount++
             }
-            if (catcount == 9){
+            if (catcount == 9) {
                 minibean()
                 catcount++
             }
         }
 
-        movie_room.setOnClickListener{
+        movie_room.setOnClickListener {
             val intent = Intent(this@livingroom, movieroom::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
             startActivity(intent)
@@ -651,11 +630,11 @@ class livingroom : AppCompatActivity() {
             if (myflag == 0) {
                 catcount++
             }
-            if (catcount==5){
+            if (catcount == 5) {
                 nonamedcat()
                 catcount++
             }
-            if (catcount == 9){
+            if (catcount == 9) {
                 minibean()
                 catcount++
             }

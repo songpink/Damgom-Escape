@@ -44,10 +44,10 @@
         android:layout_height="83dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="0dp"
+        android:gravity="center_horizontal"
         android:text="킥킥. 기다리고 있었어 담곰아\n세이브코드 : 9453"
         android:textColor="#000000"
         android:textSize="16sp"
-        android:gravity="center_horizontal"
         app:layout_constraintStart_toEndOf="@+id/dg_script"
         app:layout_constraintTop_toBottomOf="@+id/pb_image" />
 
@@ -105,8 +105,8 @@
         android:layout_width="297dp"
         android:layout_height="58dp"
         android:layout_marginTop="0dp"
-        android:text="TextView"
         android:gravity="center_horizontal"
+        android:text="TextView"
         android:textColor="#000000"
         android:textSize="16sp"
         android:visibility="invisible"
