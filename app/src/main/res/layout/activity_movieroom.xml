@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".movieroom">
+
+    <TextView
+        android:id="@+id/movieRoom"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="-영화관-"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="99dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="나가기"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/dg_image"
+        android:layout_width="130dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/script"
+        app:srcCompat="@drawable/ndgstanding" />
+
+    <TextView
+        android:id="@+id/script"
+        android:layout_width="168dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="116dp"
+        android:text="집에 영화관도 있네.. 겁나 부자인가봐"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_image" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="74dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="다음"
+        app:layout_constraintStart_toEndOf="@+id/dg_image"
+        app:layout_constraintTop_toBottomOf="@+id/script" />
+
+    <ImageView
+        android:id="@+id/pb_image"
+        android:layout_width="340dp"
+        android:layout_height="315dp"
+        android:layout_marginTop="36dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieRoom"
+        app:srcCompat="@drawable/pbexercising" />
+
+    <TextView
+        android:id="@+id/script_pb"
+        android:layout_width="144dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="80dp"
+        android:text="왜그래? 시끄러워서 와봤어."
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/script"
+        app:layout_constraintTop_toBottomOf="@+id/pb_image" />
+
+    <ImageView
+        android:id="@+id/pb_default"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/dg_image"
+        app:layout_constraintTop_toTopOf="@+id/dg_image"
+        app:srcCompat="@drawable/pinkbeandefault" />
+
+    <TextView
+        android:id="@+id/change_text"
+        android:layout_width="320dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:text="이 곳에서 다른 영화를 선택 할 수 있어요!"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_image" />
+
+    <Button
+        android:id="@+id/change_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="4dp"
+        android:background="#BEDEF8"
+        android:text="1"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_text" />
+
+    <Button
+        android:id="@+id/change_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="#FBE9B2"
+        android:text="2"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/change_button_1"
+        app:layout_constraintTop_toBottomOf="@+id/change_text" />
+
+    <Button
+        android:id="@+id/change_button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="#B8EFBB"
+        android:text="3"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/change_button_2"
+        app:layout_constraintTop_toBottomOf="@+id/change_text" />
+
+    <TextView
+        android:id="@+id/movie_1"
+        android:layout_width="329dp"
+        android:layout_height="306dp"
+        android:text="핑크빈은 무엇인가.. 그녀(?)는 ㅇㅅ를 하지 않아도 분신술로 번식한다.. 1년마다 두배가 된다.. 처음에 1명 있었다면 1년 후에는 2명, 2년 후에는 4명.. 그렇게 10년 후에는 1024명이 된다.."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/pb_image"
+        app:layout_constraintEnd_toEndOf="@+id/pb_image"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/pb_image"
+        app:layout_constraintTop_toTopOf="@+id/pb_image" />
+
+    <TextView
+        android:id="@+id/movie_2"
+        android:layout_width="334dp"
+        android:layout_height="304dp"
+        android:text="첫눈 오는 창마루에\n글을 써 보내고 싶은 핑크빈이\n자꾸 생각나는 것은\n가을 때문입니다\n중독된 핑크빈 덕질\n요시다 유니"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pb_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pb_image" />
+
+    <TextView
+        android:id="@+id/movie_3"
+        android:layout_width="335dp"
+        android:layout_height="303dp"
+        android:text="핑크빈 : 누가 내 왕갈비 먹었어?\n\n주황버섯 : 슬라임이 먹었어\n슬라임 : 돌의 정령이 먹었다규\n예티 : 난 안 먹었다\n돌의정령 : 슬라임은 거짓말을 하고 있담\n\n명탐정 핑크빈 : 음.. 이 중 한 명의 말만이 진실이고, 나머지 세 명은 거짓말을 하고 있군 큭큭"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/pb_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pb_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

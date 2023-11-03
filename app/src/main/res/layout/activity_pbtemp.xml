@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".pinkbeanroom">
+
+    <Button
+        android:id="@+id/point_120_next_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_script" />
+
+    <ImageView
+        android:id="@+id/pb_image"
+        android:layout_width="114dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/dg_image"
+        app:layout_constraintTop_toBottomOf="@+id/your_card"
+        app:srcCompat="@drawable/pinkbeandefault" />
+
+    <ImageView
+        android:id="@+id/dg_image"
+        android:layout_width="128dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/your_card"
+        app:srcCompat="@drawable/dgpiing" />
+
+    <TextView
+        android:id="@+id/pb_script"
+        android:layout_width="144dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="0dp"
+        android:text="킥킥. 기다리고 있었어 담곰아\n세이브코드 : 9453"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toEndOf="@+id/dg_script"
+        app:layout_constraintTop_toBottomOf="@+id/pb_image" />
+
+    <TextView
+        android:id="@+id/dg_script"
+        android:layout_width="178dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:text="드디어 모습을 드러냈군 핑크빈..!"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_image" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="다음"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_script" />
+
+    <TextView
+        android:id="@+id/game_rule"
+        android:layout_width="302dp"
+        android:layout_height="311dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/as_image"
+        android:layout_width="117dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="276dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/askk_jpg" />
+
+    <TextView
+        android:id="@+id/as_script"
+        android:layout_width="297dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="0dp"
+        android:text="TextView"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/as_image" />
+
+    <Button
+        android:id="@+id/point_120_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_script" />
+
+    <Button
+        android:id="@+id/point_120_next_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_script" />
+
+    <Button
+        android:id="@+id/point_120_next_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_script" />
+
+    <Button
+        android:id="@+id/poker_nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_script" />
+
+    <Button
+        android:id="@+id/poker_nextbutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_script" />
+
+    <Button
+        android:id="@+id/poker_nextbutton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_script" />
+
+    <Button
+        android:id="@+id/poker_nextbutton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_script" />
+
+    <TextView
+        android:id="@+id/text_remain_point"
+        android:layout_width="138dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="56dp"
+        android:text="당신의 남은 점수"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/remain_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="120"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/text_remain_point"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/submit_number"
+        android:layout_width="154dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_remain_point" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="73dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="156dp"
+        android:text="OK"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/submit_number"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_dg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="8dp"
+        android:text="농담곰"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_remain_point" />
+
+    <TextView
+        android:id="@+id/text_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:text="핑크빈"
+        android:textColor="#C200CA"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_remain_point" />
+
+    <TextView
+        android:id="@+id/dg_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/text_dg"
+        app:layout_constraintTop_toBottomOf="@+id/text_remain_point" />
+
+    <TextView
+        android:id="@+id/pb_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textColor="#CC00AA"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/text_pb"
+        app:layout_constraintTop_toBottomOf="@+id/text_remain_point" />
+
+    <TextView
+        android:id="@+id/colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=":"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_remain_point" />
+
+    <TextView
+        android:id="@+id/your_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="당신의 카드"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/as_script" />
+
+    <TextView
+        android:id="@+id/pb_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="핑크빈의 카드"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/as_script" />
+
+    <TextView
+        android:id="@+id/your_card_var"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="0"
+        android:textColor="#E41414"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/your_card"
+        app:layout_constraintTop_toTopOf="@+id/your_card" />
+
+    <TextView
+        android:id="@+id/pb_card_var"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textColor="#EA3B3B"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/pb_card"
+        app:layout_constraintTop_toTopOf="@+id/pb_card" />
+
+    <TextView
+        android:id="@+id/dg_betting_chip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:text="베팅한 칩"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dg" />
+
+    <TextView
+        android:id="@+id/pb_betting_chip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="104dp"
+        android:text="베팅한 칩"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pb" />
+
+    <TextView
+        android:id="@+id/dg_betting_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#29CC2F"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/dg_betting_chip_text"
+        app:layout_constraintTop_toBottomOf="@+id/dg_point" />
+
+    <TextView
+        android:id="@+id/pb_betting_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#12C319"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/pb_betting_chip_text"
+        app:layout_constraintTop_toBottomOf="@+id/pb_point" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

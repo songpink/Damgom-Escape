@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".bedroom">
+
+    <TextView
+        android:id="@+id/bedRoom"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="-침실-"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="99dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="나가기"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/script"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="여기는 침실인가?"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_bedroom" />
+
+    <ImageView
+        android:id="@+id/ndg"
+        android:layout_width="122dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/exit_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/script"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ndgstanding" />
+
+    <ImageView
+        android:id="@+id/pb_bedroom"
+        android:layout_width="301dp"
+        android:layout_height="273dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bedRoom"
+        app:srcCompat="@drawable/pbbedroom" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="67dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="다음"
+        app:layout_constraintStart_toEndOf="@+id/ndg"
+        app:layout_constraintTop_toBottomOf="@+id/script" />
+
+    <ImageView
+        android:id="@+id/question_bedroom"
+        android:layout_width="268dp"
+        android:layout_height="143dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_bedroom"
+        app:srcCompat="@drawable/questionbedroom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

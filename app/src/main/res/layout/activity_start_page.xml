@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".start_page">
+
+    <Button
+        android:id="@+id/GameStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#FFC7C7"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="시작하기"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maker_script" />
+
+    <TextView
+        android:id="@+id/GameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="농담곰 방탈출 게임"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jump_submit" />
+
+    <ImageView
+        android:id="@+id/start_damgom"
+        android:layout_width="155dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/script6"
+        app:srcCompat="@drawable/ndgbboo" />
+
+    <ImageView
+        android:id="@+id/start_pinkbean"
+        android:layout_width="153dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="240dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/script2"
+        app:srcCompat="@drawable/pbmerong" />
+
+    <ImageView
+        android:id="@+id/dg_happydance_1"
+        android:layout_width="200dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="252dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ndghappydance" />
+
+    <ImageView
+        android:id="@+id/dg_handon_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/start_damgom"
+        app:srcCompat="@drawable/ndghandon" />
+
+    <ImageView
+        android:id="@+id/dg_ssang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416"
+        app:srcCompat="@drawable/ssang" />
+
+    <ImageView
+        android:id="@+id/dg_what"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416"
+        app:srcCompat="@drawable/what" />
+
+    <TextView
+        android:id="@+id/textbox1"
+        android:layout_width="321dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="60dp"
+        android:text="소연이의 집에 초대를 받아 신난 담곰이!!"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_happydance_1" />
+
+    <TextView
+        android:id="@+id/textbox2"
+        android:layout_width="321dp"
+        android:layout_height="118dp"
+        android:text="그런데 알려준 지도대로 도착했는데 소연이의 집이 아닌 것 같다??"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <TextView
+        android:id="@+id/textbox3"
+        android:layout_width="321dp"
+        android:layout_height="118dp"
+        android:text="일단 들어가 보는 담곰.."
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <TextView
+        android:id="@+id/textbox4"
+        android:layout_width="321dp"
+        android:layout_height="118dp"
+        android:text="사실 그곳은 소연이의 집이 아니라 핑크빈의 집이었다!!"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <TextView
+        android:id="@+id/textbox5"
+        android:layout_width="321dp"
+        android:layout_height="118dp"
+        android:text="그렇게 해서 담곰이는 핑크빈의 집을 탈출해야 하게 되었다~~!"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D8D8D8"
+        android:text="다음"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
+
+    <TextView
+        android:id="@+id/script1"
+        android:layout_width="146dp"
+        android:layout_height="29dp"
+        android:text="여긴 어디지.."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259" />
+
+    <TextView
+        android:id="@+id/script2"
+        android:layout_width="167dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="킥킥 어서와! 우리 집에\n 온걸 환영해!"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/script6"
+        app:layout_constraintTop_toBottomOf="@+id/GameTitle" />
+
+    <TextView
+        android:id="@+id/script3"
+        android:layout_width="147dp"
+        android:layout_height="60dp"
+        android:text="너는 누구냐?"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <TextView
+        android:id="@+id/script4"
+        android:layout_width="189dp"
+        android:layout_height="65dp"
+        android:text="나는 핑크빈이야. \n너랑 놀려고 초대했어."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <TextView
+        android:id="@+id/script5"
+        android:layout_width="193dp"
+        android:layout_height="90dp"
+        android:text="우리 집에서 탈출하면 돼. 그럼 난 이만~"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <TextView
+        android:id="@+id/script6"
+        android:layout_width="150dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:text="아오.."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GameTitle" />
+
+    <ImageView
+        android:id="@+id/pb_default"
+        android:layout_width="161dp"
+        android:layout_height="181dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438"
+        app:srcCompat="@drawable/pinkbeandefault" />
+
+    <TextView
+        android:id="@+id/maker_script"
+        android:layout_width="287dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="24dp"
+        android:text="안녕하세요! 이 게임 개발자입니다 ㅎㅎ"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_pinkbean" />
+
+    <EditText
+        android:id="@+id/jump_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/GameTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jump_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/jump_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="28dp"
+        android:text="세이브 포인트로 건너뛰기"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/poker_error"
+        android:layout_width="236dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:text="포커에서 오류났을시 눌러주세요"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GameStart" />
+
+    <Button
+        android:id="@+id/jump_submit"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:text="입력"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/jump_password"
+        app:layout_constraintTop_toBottomOf="@+id/jump_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

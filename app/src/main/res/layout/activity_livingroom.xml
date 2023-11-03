@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".livingroom">
+
+    <TextView
+        android:id="@+id/textbox"
+        android:layout_width="278dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginEnd="125dp"
+        android:text="담곰이는 현재 거실에 있습니다!"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_image" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="104dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="다음"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textbox"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/dg_image"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="428dp"
+        android:layout_marginEnd="123dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ndghassle" />
+
+    <TextView
+        android:id="@+id/script"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:text="이 방들에서 단서들을\n 얻으면 되는건감?"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/dg_image"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bedRoom"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bedroom" />
+
+    <ImageButton
+        android:id="@+id/arcade"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/bedRoom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arcade" />
+
+    <ImageButton
+        android:id="@+id/movieRoom"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bedRoom"
+        app:srcCompat="@drawable/movieroom" />
+
+    <ImageButton
+        android:id="@+id/recordingRoom"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/movieRoom"
+        app:layout_constraintTop_toBottomOf="@+id/arcade"
+        app:srcCompat="@drawable/recordingroom" />
+
+    <ImageView
+        android:id="@+id/nonamedcat"
+        android:layout_width="126dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="468dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nonamedcat" />
+
+    <Button
+        android:id="@+id/script_button"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textbox" />
+
+    <TextView
+        android:id="@+id/script_dg"
+        android:layout_width="176dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="388dp"
+        android:text="고양이가 나왔다?!"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/script_cat"
+        android:layout_width="151dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="400dp"
+        android:text="조사는 잘 진행되고 있냥?"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="228dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="여기에 답 입력!"
+        android:inputType="textVisiblePassword"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textbox" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:text="정답제출"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/answer"
+        app:layout_constraintTop_toBottomOf="@+id/dg_image" />
+
+    <Button
+        android:id="@+id/new_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/script_button" />
+
+    <ImageView
+        android:id="@+id/minibean"
+        android:layout_width="99dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="472dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minibean" />
+
+    <TextView
+        android:id="@+id/script_mb"
+        android:layout_width="179dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="16dp"
+        android:text="나는 미니빈이라고 한다."
+        android:textColor="@color/black"
+        android:textSize="16dp"
+
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recordingRoom" />
+
+    <Button
+        android:id="@+id/next_button_mb"
+        android:layout_width="75dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible"
+        android:text="다음"
+        app:layout_constraintEnd_toStartOf="@+id/minibean"
+        app:layout_constraintTop_toBottomOf="@+id/script_mb" />
+
+    <Button
+        android:id="@+id/choose1"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:background="#C7ECC8"
+        android:text="쑥쑥 새싹"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/next_button_mb" />
+
+    <Button
+        android:id="@+id/choose3"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:background="#C7ECC8"
+        android:text="핑아일체"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose1" />
+
+    <Button
+        android:id="@+id/choose4"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#C7ECC8"
+        android:text="진 악마"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/choose3"
+        app:layout_constraintTop_toBottomOf="@+id/choose2" />
+
+    <Button
+        android:id="@+id/choose2"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="#C7ECC8"
+        android:text="난 항상 헤이스트"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/choose1"
+        app:layout_constraintTop_toBottomOf="@+id/next_button_mb" />
+
+    <Button
+        android:id="@+id/mb_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/choose1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/mb_button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="다음"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/choose1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
